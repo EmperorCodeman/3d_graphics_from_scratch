@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460" role="img" aria-labelledby="title desc">
+<title id="title">Texture mapping to RGB color</title>
+<desc id="desc">UV texture mapping from a 2D image to a projected triangle and final RGB pixel color.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d001d"/><stop offset="1" stop-color="#002331"/></linearGradient><pattern id="checker" width="36" height="36" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#ff2bd6"/><rect x="18" y="18" width="18" height="18" fill="#ff2bd6"/><rect x="18" width="18" height="18" fill="#00f5ff"/><rect y="18" width="18" height="18" fill="#00f5ff"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="460" rx="28" fill="url(#bg)"/>
+<text x="60" y="67" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">TEXTURING: THE FINAL COLOR PASS</text>
+<text x="60" y="112" fill="#ffffff" font-family="monospace" font-size="24">UV mapping tells the renderer which part of a 2D image supplies the RGB value.</text>
+<g transform="translate(110 165)" filter="url(#glow)">
+  <rect x="0" y="0" width="240" height="240" fill="url(#checker)" stroke="#ffffff" stroke-width="5"/>
+  <text x="34" y="285" fill="#b8ffff" font-family="monospace" font-size="24" font-weight="800">2D texture</text>
+</g>
+<g transform="translate(445 240)" filter="url(#glow)">
+  <path d="M0,40 L200,40" stroke="#fff" stroke-width="8" stroke-linecap="round"/><polygon points="200,40 170,22 170,58" fill="#fff"/>
+  <text x="35" y="100" fill="#ffe45c" font-family="monospace" font-size="24" font-weight="900">UV map</text>
+</g>
+<g transform="translate(770 168)" filter="url(#glow)">
+  <polygon points="140,0 280,230 0,230" fill="url(#checker)" opacity="0.90" stroke="#ff2bd6" stroke-width="5"/>
+  <circle cx="140" cy="0" r="7" fill="#fff"/><circle cx="280" cy="230" r="7" fill="#fff"/><circle cx="0" cy="230" r="7" fill="#fff"/>
+  <text x="-10" y="280" fill="#b8ffff" font-family="monospace" font-size="24" font-weight="800">textured triangle</text>
+</g>
+<g transform="translate(1110 180)" font-family="monospace" font-size="22" font-weight="800">
+  <text x="0" y="0" fill="#7cff6b">texture too big</text><text x="0" y="35" fill="#ffffff">→ average samples</text>
+  <text x="0" y="100" fill="#ff9df2">texture too small</text><text x="0" y="135" fill="#ffffff">→ pattern / repeat</text>
+</g>
+</svg>

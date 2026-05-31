@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img" aria-labelledby="title desc">
+<title id="title">Projection from 3D points to 2D screen matrix</title>
+<desc id="desc">Diagram showing 3D vertices projected through camera frustum onto a 2D pixel screen plane.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10001f"/><stop offset="1" stop-color="#012530"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="500" rx="28" fill="url(#bg)"/>
+<text x="62" y="66" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">PROJECTION: 3D POINT → SCREEN POSITION</text>
+<text x="62" y="108" fill="#ffffff" font-family="monospace" font-size="24">Trigonometry maps vertices in space onto the screen plane.</text>
+<g transform="translate(110 165)" filter="url(#glow)">
+  <circle cx="0" cy="125" r="14" fill="#fff"/>
+  <polygon points="485,20 485,235 795,235 795,20" fill="#13002d" stroke="#ff2bd6" stroke-width="4" opacity="0.95"/>
+  <g stroke="#00f5ff" opacity="0.45"><path d="M535 20 V235 M585 20 V235 M635 20 V235 M685 20 V235 M735 20 V235 M785 20 V235 M485 70 H795 M485 120 H795 M485 170 H795 M485 220 H795"/></g>
+  <circle cx="220" cy="80" r="9" fill="#ffe45c"/><circle cx="310" cy="175" r="9" fill="#7cff6b"/><circle cx="250" cy="235" r="9" fill="#00f5ff"/>
+  <path d="M0,125 L220,80 L610,72" stroke="#ffe45c" stroke-width="3"/>
+  <path d="M0,125 L310,175 L690,168" stroke="#7cff6b" stroke-width="3"/>
+  <path d="M0,125 L250,235 L645,216" stroke="#00f5ff" stroke-width="3"/>
+  <circle cx="610" cy="72" r="8" fill="#ffe45c"/><circle cx="690" cy="168" r="8" fill="#7cff6b"/><circle cx="645" cy="216" r="8" fill="#00f5ff"/>
+  <text x="112" y="306" fill="#ffffff" font-family="monospace" font-size="22">(x,y,z)</text>
+  <text x="540" y="306" fill="#ffffff" font-family="monospace" font-size="22">(screen_x, screen_y)</text>
+</g>
+</svg>

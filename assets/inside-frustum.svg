@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460" role="img" aria-labelledby="title desc">
+<title id="title">Dot product frustum test</title>
+<desc id="desc">Diagram showing frustum boundary planes with normal vectors and inside/outside geometry tests.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10001f"/><stop offset="1" stop-color="#002630"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="460" rx="28" fill="url(#bg)"/>
+<text x="62" y="66" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">INSIDE OR OUTSIDE THE FRUSTUM?</text>
+<text x="62" y="108" fill="#ffffff" font-family="monospace" font-size="24">Boundary planes have normals. Dot products turn visibility into a math test.</text>
+<g transform="translate(120 165)" filter="url(#glow)">
+  <circle cx="0" cy="110" r="14" fill="#fff"/>
+  <path d="M0,110 L485,15 L485,205 Z" fill="#00f5ff" opacity="0.13" stroke="#00f5ff" stroke-width="4"/>
+  <path d="M240,60 l-35,-68" stroke="#ffe45c" stroke-width="5"/><polygon points="205,-8 223,-4 211,10" fill="#ffe45c"/>
+  <path d="M240,160 l-35,68" stroke="#ff2bd6" stroke-width="5"/><polygon points="205,228 223,224 211,210" fill="#ff2bd6"/>
+  <circle cx="300" cy="110" r="16" fill="#7cff6b"/><text x="326" y="118" fill="#7cff6b" font-family="monospace" font-size="24" font-weight="900">inside</text>
+  <circle cx="300" cy="245" r="16" fill="#ff2bd6"/><text x="326" y="253" fill="#ff9df2" font-family="monospace" font-size="24" font-weight="900">outside</text>
+</g>
+<g transform="translate(790 175)" font-family="monospace" font-size="25" font-weight="800" filter="url(#glow)">
+  <text x="0" y="0" fill="#00f5ff">surface normal · frustum normal</text>
+  <text x="54" y="48" fill="#ffffff">→ angle / side relationship</text>
+  <text x="54" y="96" fill="#ffe45c">→ keep it or clip it</text>
+</g>
+</svg>

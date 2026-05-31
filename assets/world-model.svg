@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="470" viewBox="0 0 1400 470" role="img" aria-labelledby="title desc">
+<title id="title">3D mathematical scene with vertices and triangular meshes</title>
+<desc id="desc">Diagram showing cubes as points, triangles, surfaces, and textures before projection.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#09001e"/><stop offset="1" stop-color="#041f35"/></linearGradient><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0 L0 0 0 50" fill="none" stroke="#00f5ff" stroke-opacity="0.15" stroke-width="2"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="470" rx="28" fill="url(#bg)"/>
+<rect width="1400" height="470" rx="28" fill="url(#grid)"/>
+<text x="64" y="66" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">FIRST: A 3D MATHEMATICAL SPACE</text>
+<text x="64" y="108" fill="#ffffff" font-family="monospace" font-size="24">The cube is not drawn yet. It exists as vertices and triangle surfaces.</text>
+<g transform="translate(150 175)" filter="url(#glow)">
+  <polygon points="90,0 180,40 180,140 90,190 0,140 0,40" fill="#18184f" stroke="#00f5ff" stroke-width="4"/>
+  <polygon points="90,0 180,40 90,82 0,40" fill="#ff2bd6" opacity="0.78"/>
+  <polygon points="180,40 180,140 90,190 90,82" fill="#00f5ff" opacity="0.35"/>
+  <polygon points="0,40 90,82 90,190 0,140" fill="#ffe45c" opacity="0.45"/>
+  <g fill="#fff"><circle cx="90" cy="0" r="6"/><circle cx="180" cy="40" r="6"/><circle cx="90" cy="82" r="6"/><circle cx="0" cy="40" r="6"/><circle cx="180" cy="140" r="6"/><circle cx="90" cy="190" r="6"/><circle cx="0" cy="140" r="6"/></g>
+  <text x="-18" y="245" fill="#b8ffff" font-family="monospace" font-size="24" font-weight="700">vertices: (x,y,z)</text>
+</g>
+<g transform="translate(515 174)" filter="url(#glow)">
+  <polygon points="150,0 300,220 0,220" fill="#ff2bd6" opacity="0.20" stroke="#ff2bd6" stroke-width="5"/>
+  <path d="M150,0 L0,220 M150,0 L300,220 M0,220 L300,220" stroke="#ffffff" stroke-opacity="0.50"/>
+  <text x="20" y="267" fill="#b8ffff" font-family="monospace" font-size="24" font-weight="700">triangular mesh surface</text>
+</g>
+<g transform="translate(960 168)" filter="url(#glow)">
+  <rect x="0" y="0" width="260" height="180" rx="16" fill="#13002d" stroke="#ffe45c" stroke-width="4"/>
+  <g><rect x="28" y="30" width="42" height="42" fill="#ff2bd6"/><rect x="72" y="30" width="42" height="42" fill="#00f5ff"/><rect x="116" y="30" width="42" height="42" fill="#ffe45c"/><rect x="160" y="30" width="42" height="42" fill="#7cff6b"/><rect x="28" y="74" width="42" height="42" fill="#00f5ff"/><rect x="72" y="74" width="42" height="42" fill="#ffe45c"/><rect x="116" y="74" width="42" height="42" fill="#7cff6b"/><rect x="160" y="74" width="42" height="42" fill="#ff2bd6"/></g>
+  <text x="8" y="236" fill="#b8ffff" font-family="monospace" font-size="24" font-weight="700">texture exists before color</text>
+</g>
+</svg>

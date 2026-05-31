@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460" role="img" aria-labelledby="title desc">
+<title id="title">Rasterization and Z stack depth sorting</title>
+<desc id="desc">A stack of competing pixel calls sorted by camera-space z coordinate.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d001d"/><stop offset="1" stop-color="#05232e"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="460" rx="28" fill="url(#bg)"/>
+<text x="60" y="67" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">RASTERIZATION: SURFACES FIGHT FOR PIXELS</text>
+<text x="60" y="112" fill="#ffffff" font-family="monospace" font-size="24">When two triangles map to the same pixel, camera-space z decides who wins.</text>
+<g transform="translate(130 165)" font-family="monospace" font-size="24" font-weight="800" filter="url(#glow)">
+  <rect x="0" y="0" width="295" height="58" rx="12" fill="#ff2bd6"/><text x="28" y="37" fill="#18001d">far triangle</text>
+  <rect x="35" y="72" width="295" height="58" rx="12" fill="#00f5ff"/><text x="63" y="109" fill="#00161a">middle triangle</text>
+  <rect x="70" y="144" width="295" height="58" rx="12" fill="#ffe45c"/><text x="98" y="181" fill="#211800">near triangle</text>
+</g>
+<g transform="translate(585 184)" filter="url(#glow)">
+  <path d="M0,72 L165,72" stroke="#fff" stroke-width="8" stroke-linecap="round"/><polygon points="165,72 135,54 135,90" fill="#fff"/>
+  <text x="-5" y="130" fill="#b8ffff" font-family="monospace" font-size="23" font-weight="800">sort by z</text>
+</g>
+<g transform="translate(850 150)" filter="url(#glow)">
+  <rect x="0" y="0" width="390" height="220" rx="20" fill="#120030" stroke="#fff" stroke-width="3"/>
+  <rect x="58" y="46" width="275" height="130" fill="#ffe45c"/>
+  <text x="195" y="105" text-anchor="middle" fill="#211800" font-family="monospace" font-size="30" font-weight="900">VISIBLE</text>
+  <text x="195" y="144" text-anchor="middle" fill="#211800" font-family="monospace" font-size="30" font-weight="900">PIXEL</text>
+</g>
+</svg>

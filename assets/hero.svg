@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
+<title id="title">3D Graphics from Scratch retro hero</title>
+<desc id="desc">Retro gaming banner showing a cube, camera rays, RGB pixels, and rendering math.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14002b"/><stop offset="0.5" stop-color="#07143e"/><stop offset="1" stop-color="#001e22"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff2bd6"/><stop offset="0.5" stop-color="#00f5ff"/><stop offset="1" stop-color="#ffe45c"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0 L0 0 0 42" fill="none" stroke="#00f5ff" stroke-opacity="0.16" stroke-width="2"/></pattern>
+</defs>
+<rect width="1400" height="430" rx="34" fill="url(#bg)"/>
+<rect width="1400" height="430" rx="34" fill="url(#grid)"/>
+<rect x="32" y="32" width="1336" height="366" rx="24" fill="none" stroke="url(#neon)" stroke-width="5" filter="url(#glow)"/>
+<g transform="translate(74 94)">
+  <text x="0" y="38" fill="#ffe45c" font-family="monospace" font-size="30" font-weight="900">NO ENGINE // ONLY RGB PIXELS</text>
+  <text x="0" y="128" fill="#ffffff" font-family="monospace" font-size="76" font-weight="900">3D GRAPHICS</text>
+  <text x="0" y="210" fill="url(#neon)" font-family="monospace" font-size="78" font-weight="900">FROM SCRATCH</text>
+  <text x="4" y="270" fill="#b8ffff" font-family="monospace" font-size="28" font-weight="800">NUMPY • CAMERA • FRUSTUM • TRIANGLES • Z-STACK • UV</text>
+  <text x="4" y="318" fill="#ff9df2" font-family="monospace" font-size="24">Build the world in math. Project it to pixels. Color the screen.</text>
+</g>
+<g transform="translate(1015 92)" filter="url(#glow)">
+  <polygon points="115,0 230,54 230,178 115,238 0,178 0,54" fill="#17184e" stroke="#00f5ff" stroke-width="5"/>
+  <polygon points="115,0 230,54 115,108 0,54" fill="#ff2bd6" opacity="0.85"/>
+  <polygon points="230,54 230,178 115,238 115,108" fill="#00f5ff" opacity="0.35"/>
+  <polygon points="0,54 115,108 115,238 0,178" fill="#ffe45c" opacity="0.48"/>
+  <circle cx="115" cy="108" r="8" fill="#fff"/>
+</g>
+<g filter="url(#glow)" opacity="0.85">
+  <circle cx="795" cy="245" r="12" fill="#fff"/>
+  <path d="M795 245 L1015 146" stroke="#00f5ff" stroke-width="3"/>
+  <path d="M795 245 L1015 270" stroke="#ff2bd6" stroke-width="3"/>
+  <path d="M795 245 L1130 205" stroke="#ffe45c" stroke-width="3"/>
+  <text x="704" y="282" fill="#fff" font-family="monospace" font-size="22">camera eye</text>
+</g>
+<g transform="translate(1220 300)">
+  <rect x="0" y="0" width="24" height="24" fill="#ff2bd6"/><rect x="28" y="0" width="24" height="24" fill="#00f5ff"/><rect x="56" y="0" width="24" height="24" fill="#ffe45c"/>
+  <rect x="0" y="28" width="24" height="24" fill="#7cff6b"/><rect x="28" y="28" width="24" height="24" fill="#fff"/><rect x="56" y="28" width="24" height="24" fill="#ff8f3d"/>
+</g>
+</svg>

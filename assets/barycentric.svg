@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="490" viewBox="0 0 1400 490" role="img" aria-labelledby="title desc">
+<title id="title">Barycentric triangle pixel test</title>
+<desc id="desc">A projected triangle on a pixel grid with barycentric weights to determine if pixels are inside the triangle.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e001f"/><stop offset="1" stop-color="#012633"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1400" height="490" rx="28" fill="url(#bg)"/>
+<text x="62" y="66" fill="#ffe45c" font-family="monospace" font-size="34" font-weight="900">WHICH PIXELS ARE INSIDE THE TRIANGLE?</text>
+<text x="62" y="108" fill="#ffffff" font-family="monospace" font-size="24">After projection, a 3D triangle becomes a 2D triangle on the screen matrix.</text>
+<g transform="translate(120 145)" filter="url(#glow)">
+  <rect x="0" y="0" width="430" height="300" rx="16" fill="#100030" stroke="#00f5ff" stroke-width="4"/>
+  <g stroke="#00f5ff" stroke-opacity="0.22"><path d="M40 0 V300 M80 0 V300 M120 0 V300 M160 0 V300 M200 0 V300 M240 0 V300 M280 0 V300 M320 0 V300 M360 0 V300 M400 0 V300"/><path d="M0 40 H430 M0 80 H430 M0 120 H430 M0 160 H430 M0 200 H430 M0 240 H430 M0 280 H430"/></g>
+  <polygon points="225,28 372,247 70,250" fill="#ff2bd6" opacity="0.24" stroke="#ff2bd6" stroke-width="5"/>
+  <circle cx="220" cy="160" r="13" fill="#ffe45c"/><circle cx="350" cy="90" r="10" fill="#ff2bd6"/>
+  <text x="242" y="168" fill="#ffe45c" font-family="monospace" font-size="22" font-weight="900">inside</text>
+  <text x="372" y="98" fill="#ff9df2" font-family="monospace" font-size="22" font-weight="900">outside</text>
+</g>
+<g transform="translate(690 180)" font-family="monospace" font-size="25" font-weight="800" filter="url(#glow)">
+  <text x="0" y="0" fill="#00f5ff">pixel = a(A) + b(B) + c(C)</text>
+  <text x="46" y="55" fill="#ffffff">Barycentric coordinates ask:</text>
+  <text x="46" y="100" fill="#ffe45c">Can this pixel be made from the</text>
+  <text x="46" y="140" fill="#ffe45c">triangle's three vertices?</text>
+  <text x="46" y="205" fill="#7cff6b">valid weights → draw it</text>
+  <text x="46" y="245" fill="#ff9df2">invalid weights → skip it</text>
+</g>
+</svg>
